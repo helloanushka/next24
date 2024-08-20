@@ -1,5 +1,7 @@
 # next24
+<br>
 FULL STACK DEVELOPMENT PROJECTS
+<br>
 -Supermarket Billing System:-
 a system designed to streamline billing operations in a supermarket,ensuring accuracy and efficiency.
 <br>
