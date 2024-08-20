@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Grocery Store</h1>
+        <nav>
+            <a href="#groceries">Groceries</a>
+            <a href="#cart">Cart</a>
+            <a href="#checkout">Checkout</a>
+        </nav>
+    </header>
+
+    <section id="groceries">
+        <h2>Browse Groceries</h2>
+        <div class="grocery-list">
+            <div class="grocery-item" data-id="1" data-price="50">
+                <h3>orange</h3>
+                <p>Price: ₹70</p>
+                <button onclick="addToCart(1, 'orange', 70)">Add to Cart</button>
+            </div>
+            <div class="grocery-item" data-id="2" data-price="30">
+                <h3>strawberry</h3>
+                <p>Price: ₹90</p>
+                <button onclick="addToCart(2, 'strawberry', 90)">Add to Cart</button>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: ₹0</p>
+    </section>
+
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <button id="checkout-btn">Proceed to Payment</button>
+        <div id="order-status"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

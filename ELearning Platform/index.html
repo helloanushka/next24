@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LearnSmart: Online Courses</h1>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#courses">Courses</a>
+            <a href="#progress">Progress</a>
+        </nav>
+    </header>
+
+    <section id="profile">
+        <h2>User Profile</h2>
+        <p>Name: vanshika</p>
+        <p>Email: vanshika@example.com</p>
+        <p>Courses Enrolled: <span id="course-count">0</span></p>
+    </section>
+
+    <section id="courses">
+        <h2>Available Courses</h2>
+        <div class="course-list">
+            <div class="course-item" data-id="1" data-name="Web Development">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JS, and more!</p>
+                <button onclick="enrollCourse(1, 'Web Development')">Enroll</button>
+            </div>
+            <div class="course-item" data-id="2" data-name="Data Science">
+                <h3>Data Science</h3>
+                <p>Introduction to data analysis and machine learning.</p>
+                <button onclick="enrollCourse(2, 'Data Science')">Enroll</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="progress">
+        <h2>Track Your Progress</h2>
+        <ul id="enrolled-courses"></ul>
+        <button id="check-progress-btn">Check Progress</button>
+        <p id="progress-status"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
